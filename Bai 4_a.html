@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minitest - Bai4_a</title>
+</head>
+<body>
+<p>
+    Nhap vao a:
+</p>
+<input id="a1" type="text" oninput="tinhs1()">
+<p id="s1"></p>
+<script>
+    function tinhs1() {
+        let a1 = document.getElementById("a1").value
+        document.getElementById("s1").innerHTML = "Dien tich hinh vuong canh a: " + (a1 * a1) + '<br>' +"Chu vi hinh vuong canh a la: "+ (4*a1);
+    }
+</script>
+</body>
+</html>

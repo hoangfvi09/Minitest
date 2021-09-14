@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4_b</title>
+</head>
+<body>
+<p>Nhập a:</p>
+<input id="a" type="text" oninput="tinhs()">
+<p>Nhập b:</p>
+<input type="text" id="b" oninput="tinhs()">
+<p id="s" ></p>
+<script>
+    function tinhs() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        document.getElementById('s').innerHTML ="a^2=" + (a*a) + '<br>' +"b^2=" + (b*b);
+    }
+</script>
+</body>
+</html>
